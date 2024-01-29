@@ -1,0 +1,193 @@
+html{
+    padding: 0;
+    margin: 0 auto;
+}
+
+body{
+    padding:0;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+header{  
+    background-color:#5a5b5e;
+    color:white;
+    text-align: center;
+    padding:15px;
+}
+
+.parte-imagen{
+    justify-content: center;
+    display: flex;
+}
+
+
+.parte-texto li{
+    display:inline;
+    text-decoration: none;
+    list-style: none;   
+}
+
+.parte-texto img{
+    margin-right: 4px;  
+}
+
+.parte-texto li{
+    display:inline;
+    text-decoration: none;
+    list-style: none; 
+    white-space: nowrap;   
+}
+
+.parte-texto ul{
+    padding:0;
+}
+
+.parte-texto a{
+    color: #dbdbdb;
+    text-decoration: none;
+    margin-right:10px;
+}
+
+.parte-texto a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    margin-right:10px;
+}
+
+
+.foto-perfil{
+    border-radius: 50%;
+    width:300px;
+}
+
+
+.contenedor-trabajos a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-trabajos a:hover{
+    opacity: 0.5;
+}
+
+
+.trabajo{
+    
+    box-sizing: border-box;
+    padding:10px;
+    line-height:1.4;
+    
+}
+
+.imagen-portfolio{
+    width:100%;
+    object-fit: contain;
+}
+
+.Titulo-trabajo{
+    font-weight:600; 
+}
+
+.Descripcion-trabajo{
+    width:100%;
+    object-fit: contain;
+}
+
+.Descripcion-trabajo a{
+    text-decoration: none;
+    color:black;
+}
+
+.Descripcion-trabajo a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
+footer{
+    background:black;
+    color: #ffffff;
+    text-align: center;
+    padding:4px;
+}
+
+.img-footer{
+    width:16px;
+}
+
+footer a{
+    color: #dbdbdb;
+    text-decoration: none;
+    margin-right:10px;
+}
+
+footer a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+    margin-right:10px;
+}
+
+
+
+@media (min-width:768px){
+
+    .contenedor-trabajos .trabajo{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Descripcion-trabajo{
+        width:100%;
+        max-width: 300px;
+        object-fit: contain;
+    }
+
+    .imagen-portfolio{
+        width:100%;
+        object-fit: contain;}
+}
+
+@media (min-width:1024px){
+
+    .parte-texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex-intro{  
+        margin:0 auto;
+        width:810px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .parte-texto{
+        width:350px;
+        text-align:left;
+    }
+
+
+    .contenedor-trabajos{
+        display: flex;
+        justify-content: center;
+    
+    }
+
+    footer{
+        display: flex;
+        box-sizing: border-box;
+        align-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .Descripcion-trabajo{
+        width:100%;
+        max-width: 300px;
+        object-fit: contain;
+    }
+
+}
